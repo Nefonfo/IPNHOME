@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-04 18:08-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\models.py:28
+msgid "Student"
+msgstr "Estudiante"
+
+#: .\models.py:29 .\wagtail_hooks.py:16
+msgid "Students"
+msgstr "Estudiantes"
+
+#: .\models.py:32
+msgid "student number"
+msgstr "Boleta"
+
+#: .\models.py:34
+msgid "Enter a numeric value"
+msgstr "Ingresa un valor numérico"
+
+#: .\models.py:39
+msgid "user"
+msgstr "Usuario"
+
+#: .\models.py:48 .\wagtail_hooks.py:30
+msgid "Academic Unit"
+msgstr "Unidad Académica"
+
+#: .\views.py:27
+msgid "Student: Primary Key duplicate"
+msgstr "Estudiante: Llave Primaria Duplicada"
+
+#: .\views.py:43
+msgid "Database Uploaded Successfully"
+msgstr "Base de Datos Actualizada Exitosamente"
+
+#: .\views.py:47
+msgid "Error: "
+msgstr "Error: "
+
+#: .\views.py:51
+msgid "Form Error: Please, check file extension"
+msgstr "Error en el formulario: Por favor checa extensión del archivo"
+
+#: .\wagtail_hooks.py:40
+msgid "Bulk Students Data"
+msgstr "Importar Estudiantes"

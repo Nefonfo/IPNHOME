@@ -1,0 +1,150 @@
+{% extends 'core/admin_base.html' %}
+{% load i18n static %}
+
+{% block title %}
+    {% trans 'Edit Profile' %} | {% if user.get_full_name %}{{user.get_full_name}}{% else %}{{user.email}}{% endif %}</h3>
+{% endblock title %}
+
+
+{% block sidebar_content %}
+<ul class="navbar-nav text-light" id="accordionSidebar">
+    <li class="nav-item">
+        <a class="nav-link active" href="index.html">
+        <i class="fas fa-tachometer-alt"></i>
+        <span>&nbsp;Vista General</span></a>
+    </li>
+    <hr class="sidebar-divider">
+    <div class="sidebar-heading"></div>
+    <div class="sidebar-heading">
+        <p class="mb-0">PENDIENTES</p>
+    </div>
+    <li class="nav-item"><a class="nav-link" href="charts.html"><i class="fas fa-chart-area"></i><span>&nbsp;Exanenes</span></a></li>
+    <li class="nav-item"><a class="nav-link" href="tables.html"><i class="fas fa-table"></i><span>&nbsp;Tareas</span></a></li>
+    <hr class="sidebar-divider">
+</ul>
+{% endblock sidebar_content %}
+
+
+{% block admin_content %}
+{% if messages %}
+    {% for message in messages %}
+        <div class="{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}bg-danger text-white{% elif message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}bg-success text-white{% elif message.level == DEFAULT_MESSAGE_LEVELS.WARNING %}bg-warning text-white{% endif %} mt-n4 mb-2 bounce animated p-3 d-flex align-items-center justify-content-center justify-content-md-start">
+            <h4 class="m-0"><i class="fa {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}fa-times-circle{% elif message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}fa-check-circle{% elif message.level == DEFAULT_MESSAGE_LEVELS.WARNING %}fa-exclamation-triangle{% endif %}"></i>&nbsp;{{message}}</h4>
+        </div>
+    {% endfor %}
+{% endif %}
+<h3 class="text-dark mb-4">{% trans 'Profile' %}</h3>
+<div class="row mb-3">
+    <div class="col">
+        <div class="row mb-3 d-none">
+            <div class="col">
+                <div class="card textwhite bg-primary text-white shadow">
+                    <div class="card-body">
+                        <div class="row mb-2">
+                            <div class="col">
+                                <p class="m-0">Peformance</p>
+                                <p class="m-0"><strong>65.2%</strong></p>
+                            </div>
+                            <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
+                        </div>
+                        <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card textwhite bg-success text-white shadow">
+                    <div class="card-body">
+                        <div class="row mb-2">
+                            <div class="col">
+                                <p class="m-0">Peformance</p>
+                                <p class="m-0"><strong>65.2%</strong></p>
+                            </div>
+                            <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
+                        </div>
+                        <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="card shadow mb-3">
+                    <div class="card-header py-3">
+                        <p class="text-primary m-0 fw-bold">{% trans 'User Settings' %}</p>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" action="{% url 'profile_edit' %}" enctype="multipart/form-data" novalidate>
+                            {% csrf_token %}
+                            <div>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-center">
+                                        <div class="mb-3">
+                                            {% if request.user.wagtail_userprofile.avatar %}
+                                                <img class="rounded-circle img-fluid" style="max-height: 10rem;" src="{{ request.user.wagtail_userprofile.avatar.url }}" alt="{{ request.user.get_full_name }}">
+                                            {% else %}
+                                                <img class="rounded-circle img-fluid" style="max-height: 10rem;" src="{% static 'users/no_image.png' %}" alt="no image">
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="mb-3">
+                                            <label class="form-label" for="{{form.avatar.id_for_label}}">
+                                                <strong>{{form.avatar.label}}</strong>
+                                            </label>
+                                            <input class="form-control" type="file" name="{{form.avatar.name}}" id="{{form.avatar.id_for_label}}">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="{{form.email.id_for_label}}">
+                                            <strong>{{form.email.label}}</strong>
+                                        </label>
+                                        <input class="form-control" type="text" id="{{form.email.id_for_label}}"  name="{{form.email.name}}" value="{{form.email.value}}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="{{form.first_name.id_for_label}}">
+                                            <strong>{{form.first_name.label}}</strong>
+                                        </label>
+                                        <input class="form-control" type="text" id="{{form.first_name.id_for_label}}" name="{{form.first_name.name}}" value="{{form.first_name.value}}">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="{{form.last_name.id_for_label}}">
+                                            <strong>{{form.last_name.label}}</strong>
+                                        </label>
+                                        <input class="form-control" type="text" id="{{form.last_name.id_for_label}}" name="{{form.last_name.name}}" value="{{form.last_name.value}}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3"><button class="btn btn-primary btn-sm" type="submit">{% trans 'Update Profile' %}</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="card shadow">
+                    <div class="card-header py-3">
+                        <p class="text-primary m-0 fw-bold">{% trans 'Change Password' %}</p>
+                    </div>
+                    <div class="card-body">
+                        <p>{% trans 'Please pay atenttion to your credentials' %}</p><a href="{% url 'password_change' %}" class="btn btn-primary btn-sm" type="button">{% trans 'Change Password' %}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock admin_content %}
+    

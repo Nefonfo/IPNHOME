@@ -1,0 +1,59 @@
+{% extends 'core/accounts_base.html' %}
+{% load i18n static %}
+
+
+{% block body_class %}bg-gradient-primary{% endblock body_class %}
+    
+
+{% block content %}
+{% if form.errors %}
+<div class="bounce animated bg-danger p-3 text-white d-flex align-items-center justify-content-center justify-content-md-start">
+    <h4 class="m-0"><i class="fa fa-times-circle"></i>&nbsp;{% trans 'Something is wrong, check your credentials' %}</h4>
+</div>
+{% endif %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-9 col-lg-12 col-xl-10">
+            <div class="card shadow-lg o-hidden border-0 my-5">
+                <div class="card-body p-0">
+                    <div class="row">
+                        <div class="col-lg-6 d-none d-lg-flex">
+                            <div class="flex-grow-1 bg-login-image" style="background-image: url({% static 'core/images/dogs/image3.jpeg' %});"></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="p-5">
+                                <div class="text-center">
+                                    <h4 class="text-dark mb-4">Welcome Back!</h4>
+                                </div>
+                                <form class="user" method="POST" action="{% url 'login' %}" novalidate>
+                                    {% csrf_token %}
+                                    
+                                    {% for error in form.non_field_errors  %}
+                                    <div class="alert alert-danger" role="alert">
+                                        {{error}}
+                                    </div>
+                                    {% endfor %}  
+                                    
+                                    <div class="mb-3">
+                                        <input class="form-control form-control-user" type="email" id="{{form.username.id_for_label}}" aria-describedby="emailHelp" placeholder="Enter Email Address..." name="{{form.username.name}}"> 
+                                    </div>
+                                    <div class="mb-3">
+                                        <input class="form-control form-control-user" type="password" id="{{form.password.id_for_label}}" placeholder="Password" name="{{form.password.name}}">
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="custom-control custom-checkbox small">
+                                            <div class="form-check"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-1"><label class="form-check-label custom-control-label" for="formCheck-1">Remember Me</label></div>
+                                        </div>
+                                    </div><button class="btn btn-primary d-block btn-user w-100" type="submit">{% trans 'Login' %}</button>
+                                    <hr>
+                                </form>
+                                <div class="text-center"><a class="small" href="{% url 'password_reset' %}">Forgot Password?</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

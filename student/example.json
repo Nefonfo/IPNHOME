@@ -1,0 +1,22 @@
+{
+    "data": [
+      {
+        "first_name": "Luis Eduardo",
+        "last_name": "Garcia Lopez",
+        "email": "sample@sample.com",
+        "no_student": "2020600018",
+        "academic_unit": "UPIICSA"
+      },
+      {
+        "first_name": "Enrique",
+        "last_name": "Octavio Gamiño",
+        "email": "sample@sample2.com",
+        "no_student": "2020600019",
+        "academic_unit": "UPIICSA"
+      },
+      {
+        "no_student": "2020600012",
+        "academic_unit": "ESCOM"
+      }
+    ]
+}

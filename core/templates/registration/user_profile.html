@@ -1,0 +1,42 @@
+{% extends 'core/admin_base.html' %}
+{% load wagtailimages_tags static i18n %}
+
+
+
+{% block title %}
+    {% trans 'Dashboard' %} | {% if user.get_full_name %}{{user.get_full_name}}{% else %}{{user.email}}{% endif %}</h3>
+{% endblock title %}
+    
+
+
+{% block sidebar_content %}
+<ul class="navbar-nav text-light" id="accordionSidebar">
+    <li class="nav-item">
+        <a class="nav-link active" href="index.html">
+        <i class="fas fa-tachometer-alt"></i>
+        <span>&nbsp;Vista General</span></a>
+    </li>
+    <hr class="sidebar-divider">
+    <div class="sidebar-heading"></div>
+    <div class="sidebar-heading">
+        <p class="mb-0">PENDIENTES</p>
+    </div>
+    <li class="nav-item"><a class="nav-link" href="charts.html"><i class="fas fa-chart-area"></i><span>&nbsp;Exanenes</span></a></li>
+    <li class="nav-item"><a class="nav-link" href="tables.html"><i class="fas fa-table"></i><span>&nbsp;Tareas</span></a></li>
+    <hr class="sidebar-divider">
+</ul>
+{% endblock sidebar_content %}
+    
+
+{% block admin_content %}
+<div class="d-sm-flex justify-content-between align-items-center mb-4">
+    <h3 class="text-dark mb-0">{% trans 'Welcome' %}, {% if user.get_full_name %}{{user.get_full_name}}{% else %}{{user.email}}{% endif %}</h3>
+    {% if user.student %}
+    {% image user.student.academic_unit.logo width-300 as academic_image %}
+    <div class="col-1">
+        <img class="img-fluid" src="{{academic_image.url}}" alt="{{academic_image.alt}}">
+    </div>
+    {% endif %}
+</div>
+{% endblock admin_content %}
+    

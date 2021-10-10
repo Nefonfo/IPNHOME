@@ -1,0 +1,293 @@
+{
+    "data": [
+        {
+            "name": "Centro de Estudios Científicos Y Tecnológicos #1 'Gonzalo Vázquez Vela'",
+            "little_name": "CECYT #1",
+            "level": "MS",
+            "logo": "CECYT1.jpg"
+        },
+        {
+            "name": "Centro de Estudios Científicos Y Tecnológicos #2 'Miguel Bernard'",
+            "little_name": "CECYT #2",
+            "level": "MS",
+            "logo": "CECYT2.png"
+        },
+        {
+            "name": "Centro de Estudios Científicos Y Tecnológicos #3 'Estanislao Ramírez Ruiz'",
+            "little_name": "CECYT #3",
+            "level": "MS",
+            "logo": "CECYT3.png"
+        },
+        {
+            "name": "Centro de Estudios Científicos Y Tecnológicos #4 'Lázaro Cárdenas'",
+            "little_name": "CECYT #4",
+            "level": "MS",
+            "logo": "CECYT4.jpg"
+        },
+        {
+            "name": "Centro de Estudios Científicos Y Tecnológicos #5 'Benito Juárez'",
+            "little_name": "CECYT #5",
+            "level": "MS",
+            "logo": "CECYT5.png"
+        },
+        {
+            "name": "Centro de Estudios Científicos Y Tecnológicos #6 'Miguel Othón de Mendizábal'",
+            "little_name": "CECYT #6",
+            "level": "MS",
+            "logo": "CECYT6.png"
+        },
+        {
+            "name": "Centro de Estudios Científicos Y Tecnológicos #7 'Cuauhtémoc'",
+            "little_name": "CECYT #7",
+            "level": "MS",
+            "logo": "CECYT7.png"
+        },
+        {
+            "name": "Centro de Estudios Científicos Y Tecnológicos #8 'Narciso Bassols'",
+            "little_name": "CECYT #8",
+            "level": "MS",
+            "logo": "CECYT8.png"
+        },
+        {
+            "name": "Centro de Estudios Científicos Y Tecnológicos #9 'Juan de Dios Bátiz Paredes'",
+            "little_name": "CECYT #9",
+            "level": "MS",
+            "logo": "CECYT9.png"
+        },
+        {
+            "name": "Centro de Estudios Científicos Y Tecnológicos #10 'Carlos Vallejo Márquez'",
+            "little_name": "CECYT #10",
+            "level": "MS",
+            "logo": "CECYT10.png"
+        },
+        {
+            "name": "Centro de Estudios Científicos Y Tecnológicos #11 'Wilfrido Massieu'",
+            "little_name": "CECYT #11",
+            "level": "MS",
+            "logo": "CECYT11.png"
+        },
+        {
+            "name": "Centro de Estudios Científicos Y Tecnológicos #12 'José María Morelos'",
+            "little_name": "CECYT #12",
+            "level": "MS",
+            "logo": "CECYT12.png"
+        },
+        {
+            "name": "Centro de Estudios Científicos Y Tecnológicos #13 'Ricardo Flores Magón'",
+            "little_name": "CECYT #13",
+            "level": "MS",
+            "logo": "CECYT13.png"
+        },
+        {
+            "name": "Centro de Estudios Científicos Y Tecnológicos #14 'Luis Enrique Erro Soler'",
+            "little_name": "CECYT #14",
+            "level": "MS",
+            "logo": "CECYT14.png"
+        },
+        {
+            "name": "Centro de Estudios Científicos Y Tecnológicos #15 'Diodoro Antúnez Echegaray'",
+            "little_name": "CECYT #15",
+            "level": "MS",
+            "logo": "CECYT15.jpg"
+        },
+        {
+            "name": "Centro de Estudios Científicos Y Tecnológicos #16 'Hidalgo'",
+            "little_name": "CECYT #16",
+            "level": "MS",
+            "logo": "CECYT16.png"
+        },
+        {
+            "name": "Centro de Estudios Científicos Y Tecnológicos #17 'León Guanajuato'",
+            "little_name": "CECYT #17",
+            "level": "MS",
+            "logo": "CECYT17.png"
+        },
+        {
+            "name": "Centro de Estudios Científicos Y Tecnológicos #18 'Zacatecas'",
+            "little_name": "CECYT #18",
+            "level": "MS",
+            "logo": "CECYT18.jpeg"
+        },
+        {
+            "name": "Centro de Estudios Científicos Y Tecnológicos #19 'Leona Vicario'",
+            "little_name": "CECYT #19",
+            "level": "MS",
+            "logo": "CECYT19.png"
+        },
+        {
+            "name": "Centro de Estudios Tecnológicos #1 'Walter Cross Buchanan'",
+            "little_name": "CET #1",
+            "level": "MS",
+            "logo": "CET1.jpg"
+        },
+        {
+            "name": "Centro Interdisciplinario de Ciencias de la Salud",
+            "little_name": "CICS",
+            "level": "S",
+            "logo": "CICS.png",
+            "many": [
+                "Unidad Milpa Alta",
+                "Unidad Santo Tomás"
+            ]
+        },
+        {
+            "name": " Escuela Nacional de Biblioteconomía y Archivonomía",
+            "little_name": "ENBA",
+            "level": "S",
+            "logo": "ENBA.png"
+        },
+        {
+            "name": "Escuela Nacional de Ciencias Biológicas",
+            "little_name": "ENCB",
+            "level": "S",
+            "logo": "ENCB.jpg"
+        },
+        {
+            "name": "Escuela Nacional de Medicina y Homeopatía",
+            "little_name": "ENMyH",
+            "level": "S",
+            "logo": "ENMyH.png"
+        },
+        {
+            "name": "Escuela Superior de Comercio y Administración",
+            "little_name": "ESCA",
+            "level": "S",
+            "logo": "ESCA.png",
+            "many": [
+                "Unidad Santo Tomás",
+                "Unidad Tepepan"
+            ]
+        },
+        {
+            "name": "Escuela Superior de Cómputo",
+            "little_name": "ESCOM",
+            "level": "S",
+            "logo": "ESCOM.png"
+        },
+        {
+            "name": "Escuela Superior de Enfermería y Obstetricia",
+            "little_name": "ESEO",
+            "level": "S",
+            "logo": "ESEO.png"
+        },
+        {
+            "name": "Escuela Superior de Física y Matemáticas",
+            "little_name": "ESFM",
+            "level": "S",
+            "logo": "ESFM.png"
+        },
+        {
+            "name": "Escuela Superior de Ingeniería Mecánica y Eléctrica",
+            "little_name": "ESIME",
+            "level": "S",
+            "logo": "ESIME.png",
+            "many": [
+                "Unidad Culhuacán",
+                "Unidad Ticomán",
+                "Unidad Azcapotzalco",
+                "Unidad Zacatenco"
+            ]
+        },
+        {
+            "name": "Escuela Superior de Ingeniería Química e Industrias Extractivas",
+            "little_name": "ESIQIE",
+            "level": "S",
+            "logo": "ESIQIE.jpg"
+        },
+        {
+            "name": "Escuela Superior de Ingeniería Textil",
+            "little_name": "ESIT",
+            "level": "S",
+            "logo": "ESIT.png"
+        },
+        {
+            "name": "Escuela Superior de Ingeniería y Arquitectura",
+            "little_name": "ESIA",
+            "level": "S",
+            "logo": "ESIA.png",
+            "many": [
+                "Unidad Ticomán",
+                "Unidad Zacatenco",
+                "Unidad Tecamachalco"
+            ]
+        },
+        {
+            "name": "Escuela Superior de Medicina",
+            "little_name": "ESM",
+            "level": "S",
+            "logo": "ESM.png"
+        },
+        {
+            "name": "Escuela Superior de Turismo",
+            "little_name": "EST",
+            "level": "S",
+            "logo": "EST.png"
+        },
+        {
+            "name": "Uni​dad Profesional Interdisciplinaria de Ingeniería Campus Coahuila",
+            "little_name": "UPIIC",
+            "level": "S",
+            "logo": "UPIIC.jpg"
+        },
+        {
+            "name": "Unidad Profesional Interdisciplinaria de Biotecnología",
+            "little_name": "UPIBI",
+            "level": "S",
+            "logo": "UPIBI.png"
+        },
+        {
+            "name": "Unidad Profesional Interdisciplinaria de Ingeniería Campus Guanajuato",
+            "little_name": "UPIIG",
+            "level": "S",
+            "logo": "UPIIG.jpg"
+        },
+        {
+            "name": "Unidad Profesional Interdisciplinaria de Ingeniería Campus Zacatecas",
+            "little_name": "UPIIZ",
+            "level": "S",
+            "logo": "UPIIZ.jpg"
+        },
+        {
+            "name": "Unidad Profesional Interdisciplinaria de Ingeniería Campus Hidalgo",
+            "little_name": "UPIIH",
+            "level": "S",
+            "logo": "UPIIH.png"
+        },
+        {
+            "name": "Unidad Profesional Interdisciplinaria de Ingeniería Campus Palenque",
+            "little_name": "UPIIP",
+            "level": "S",
+            "logo": "UPIIP.png"
+        },
+        {
+            "name": "Unidad Profesional Interdisciplinaria de Ingeniería Campus Tlaxcala",
+            "little_name": "UPIIT",
+            "level": "S",
+            "logo": "UPIIT.jpg"
+        },
+        {
+            "name": "Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas",
+            "little_name": "UPIICSA",
+            "level": "S",
+            "logo": "UPIICSA.png"
+        },
+        {
+            "name": "Unidad Profesional Interdisciplinaria en Ingeniería y Tecnologías Avanzadas",
+            "little_name": "UPIITA",
+            "level": "S",
+            "logo": "UPIITA.png"
+        },
+        {
+            "name": "Unidad Profesional Interdisciplinaria en Energía y Movilidad",
+            "little_name": "UPIEM",
+            "level": "S",
+            "logo": "UPIEM.jpg"
+        },
+        {
+            "name": "Dirección de Administración Escolar",
+            "little_name": "DAE",
+            "level": "DAE",
+            "logo": "DAE.jpg"
+        }
+    ]
+}
